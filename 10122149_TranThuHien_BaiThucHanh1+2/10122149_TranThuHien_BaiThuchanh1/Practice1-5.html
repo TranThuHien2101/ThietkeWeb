@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu sản phẩm</title>
+    <style>
+        #gioithieusanpham {
+            display: flex;
+            flex-wrap: wrap;/*các phần tử con sẽ tự động xuống dòng nếu không đủ không gian theo chiều ngang*/
+        }
+        #phandautrang {
+            border: 1px solid #000;
+            width: 800px;
+            height: 200px;
+            margin-bottom: 10px;
+        }
+        #anhbanner {
+            width: 800px;
+            height: 200px; 
+        }
+        #phanthantrang1 {
+            border: 1px solid #000;
+            width: 450px;
+            height: 500px;
+            float: left;
+        }
+        #danhmucsanpham{
+            color:#FF0000;
+            margin-left: 20px;
+        }
+        #anh1, #anh2, #anh3 {
+            width: 100px;
+            height: 115px;            
+            float: left;
+            margin-left: 20px;
+        }
+        .thongtinsanpham{
+            margin-left: 120px;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+        #phanthantrang2 {
+            border: 1px solid #000;
+            width: 340px;
+            height: 500px;
+            margin-left: 10px;
+            float: left;
+        }
+        .khung {
+            width: 340px;
+            height: 50px;
+            color:aliceblue;
+            background-color:cornflowerblue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .anhquangcao {
+            margin-left: 10px;
+            margin-top: 10px;
+            width: 320px;
+            height: 45px;
+            
+        }
+        #phancuoitrang {
+            border: 1px solid #000;
+            width: 800px;
+            height: 100px;
+            float: left;
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="giothieusanpham">
+        <div id="phandautrang">
+            <img id="anhbanner" src="c:\Users\THU HIEN\Pictures\Saved Pictures - Sao chép\Anh-beauty-doanh-nhan-5.jpg" alt="">
+        </div>
+        <div id="phanthantrang1">
+            <h3 id="danhmucsanpham">DANH MỤC SẢN PHẨM</h3>
+            <img src="c:\Users\THU HIEN\Pictures\Saved Pictures - Sao chép\107056802_3812373995456163_8467447344461775495_o.jpg" alt="Ảnh lỗi" id="anh1">
+            <ul class="thongtinsanpham">
+                <li>Tên sản phẩm: &lt;Tên sản phẩm&gt;</li>
+                <li>Mã sản phẩm: &lt;Mã sản phẩm&gt;</li>
+                <li>Giá bán: &lt;Giá bán&gt;</li>
+                <li>Mô tả: &lt;Mô tả về sản phẩm&gt;</li>
+            </ul>
+            <br>
+            <img src="c:\Users\THU HIEN\Pictures\Saved Pictures - Sao chép\107056802_3812373995456163_8467447344461775495_o.jpg" alt="Ảnh lỗi" id="anh2">
+            <ul class="thongtinsanpham">
+                <li>Tên sản phẩm: &lt;Tên sản phẩm&gt;</li>
+                <li>Mã sản phẩm: &lt;Mã sản phẩm&gt;</li>
+                <li>Giá bán: &lt;Giá bán&gt;</li>
+                <li>Mô tả: &lt;Mô tả về sản phẩm&gt;</li>
+            </ul>
+            <img src="c:\Users\THU HIEN\Pictures\Saved Pictures - Sao chép\107056802_3812373995456163_8467447344461775495_o.jpg" alt="Ảnh lỗi" id="anh3">
+            <ul class="thongtinsanpham">
+                <li>Tên sản phẩm: &lt;Tên sản phẩm&gt;</li>
+                <li>Mã sản phẩm: &lt;Mã sản phẩm&gt;</li>
+                <li>Giá bán: &lt;Giá bán&gt;</li>
+                <li>Mô tả: &lt;Mô tả về sản phẩm&gt;</li>
+            </ul>
+        </div>
+        <div id="phanthantrang2">
+            <div class="khung">
+                <h3>Liên kết</h3>                
+            </div>
+            <ul>
+                <li><a href=""><u>&lt;Liên kết số 1&gt;</u></a></li>
+                <li><a href=""><u>&lt;Liên kết số 2&gt;</u></a></li>
+                <li><a href=""><u>&lt;Liên kết số 3&gt;</u></a></li>
+                <li><a href=""><u>&lt;Liên kết số 4&gt;</u></a></li>
+                <li><a href=""><u>&lt;Liên kết số 5&gt;</u></a></li>
+            </ul>
+            <div class="khung">
+                <h3>Quảng cáo</h3>                 
+            </div>
+            <img src="c:\Users\THU HIEN\Pictures\Saved Pictures - Sao chép\107056802_3812373995456163_8467447344461775495_o.jpg" alt="Ảnh lỗi" class="anhquangcao">
+            <img src="c:\Users\THU HIEN\Pictures\Saved Pictures - Sao chép\107056802_3812373995456163_8467447344461775495_o.jpg" alt="Ảnh lỗi" class="anhquangcao">
+            <img src="c:\Users\THU HIEN\Pictures\Saved Pictures - Sao chép\107056802_3812373995456163_8467447344461775495_o.jpg" alt="Ảnh lỗi" class="anhquangcao">
+        </div>
+        <div id="phancuoitrang">
+            <footer>
+                <p>Bản quyền thuộc về <b>&lt;Trần Thu Hiền &gt;</b></p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

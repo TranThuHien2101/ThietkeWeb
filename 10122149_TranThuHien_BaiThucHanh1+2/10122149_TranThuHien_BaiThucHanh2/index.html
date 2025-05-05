@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Khoa CNTT</title>
+    <style>
+        h1 {
+            font-size: 16px;   
+        }
+        h2 {
+            margin-top: 0px;
+            color: rgb(100, 149, 237);
+            font-size: 30px;
+        }
+        #menu {
+            background-color: #000;
+            width: 1000px;
+        }
+        #menu ul {
+            display: flex;
+            list-style-type: none;/*loại bỏ kí tự đầu trong ds*/
+            /* padding: 0%;khoảng cách nội dung và viền */
+        }
+        #menu li a {
+            color: aliceblue;
+            display: block;
+            padding: 10px;
+            text-decoration: none;/*loại bỏ gạch chân mặc định của liên kết*/
+        }
+        #content {
+            width: 1000px;
+        }
+        #anhsideshow {
+            width: 1000px;
+            height: 200px;
+            margin-bottom: 10px;
+        }
+        #content-left {
+            float: left;
+            width: 700px;
+        }
+        #tintucsukien {
+            background-color: red;
+            color: aliceblue;
+            width: 200px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+        }
+        #tintucsukien p {
+            margin-left: 10px;
+        }
+        #dongkechinh1 {
+            margin-top: 1px;
+            width: 100%;
+            height: 2px;
+            background-color: red;
+        }
+        #tintucsukien-left {            
+            float: left;
+        }
+        #anhsinhnhat {
+            margin-top: 10px;
+            width: 300px;
+            height: 200px;
+        }
+        #thongtintochucsinhnhat {
+            margin-top: 1px;
+            width: 300px;
+        }
+        #thongtinngaysinhnhat {
+            width: 300px;
+        }
+        #tintucsukien-right {
+            float: left;
+            margin-top: 10px;
+            margin-left: 15px;
+        }
+        #anhlebaove {
+            float: left;
+            width: 50px;
+            height: 60px;
+            margin-bottom: 10px;
+        }
+        #thongtinlebaove {
+            float: left;
+            width: 310px;
+            margin-top: 0px;
+            margin-left: 10px;
+        } 
+        .dongkephu {
+            clear: both;
+            border-top: 1px solid gray;
+            margin-top: 10px;
+        }
+        #anhtruongDHSPKTHY {
+            float: left;
+            margin-top: 10px;
+            width: 50px;
+            height: 60px;   
+        }
+        #thongtintruongDHSPKTHY {
+            float: left;
+            width: 310px;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+        #anhviettel {
+            float: left;
+            margin-top: 10px;
+            width: 50px;
+            height: 60px;     
+            margin-bottom: 10px;
+        }
+        #thongtinviettel {
+            float: left;
+            width: 310px;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+        #anhcongbo02dean {
+            float: left;
+            margin-top: 10px;
+            width: 50px;
+            height: 60px;
+            margin-bottom: 10px;
+        }
+        #thongtincongbo02dean {
+            float: left;
+            width: 310px;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+        #xemthem {
+            float: right;
+        }
+        #activites {
+            width: 700px;
+        }
+        #hoithisinhvien {
+            background-color: orangered;
+            color: aliceblue;
+            width: 200px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+        }
+        #hoithisinhvien p {
+            margin-left: 10px;
+        }
+        #dongkechinh2 {
+            margin-top: 1px;
+            width: 100%;
+            height: 2px;
+            background-color:orangered;
+        }
+        #hoithisinhvien-left {
+            float: left;
+        }
+        #vuicungit {
+            color: green;
+            margin-left: 80px;
+        }
+        #anhvuicungit {
+            width: 300px;
+            height: 200px;
+            
+        }
+        #vannghe-thethao {
+            color: green;
+            margin-left: 60px;
+        }
+        #anhvannghe-thethao {
+            width: 300px;
+            height: 200px;
+        }
+        #hoithisinhvien-right {
+            /* clear: both; */
+            float: right;
+        }
+        #olympictinhoc {
+            color: #6495ed;
+            margin-left: 70px;
+        }
+        #anholympictinhoc {
+            width: 300px;
+            height: 200px;
+        }
+        #nghiencuukhoahoc {
+            color:#6495ed;
+            margin-left: 60px;
+        }
+        #anhnghiencuukhoahoc {
+            width: 300px;
+            height: 200px;
+        }
+        #content-right {
+            float: left;
+            width: 270px;
+            margin-left: 30px;
+            overflow: auto;/*các phần tử con không bị ảnh hưởng bởi float*/
+        }
+        #wrapper-thongbao {
+            background-color: #6495ed;
+            width: 270px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+        }
+        #wrapper-thongbao p {
+            color: aliceblue;
+            margin-left: 15px;
+        }
+        #thongbao {
+            margin-left: -20px;
+        }
+        #thongbao li {
+            margin-bottom: 10px;
+            margin-left: 0%;
+        }
+        .demuc1 {
+            background-color: orangered;
+            width: 270px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+        .demuc2 {
+            background-color:deepskyblue;
+            width: 270px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+        .demuc3 {
+            background-color: orange;
+            width: 270px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+        .demuc4 {
+            background-color:green;
+            width: 270px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+        .demuc5 {
+            background-color:blueviolet;
+            width: 270px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+        }
+        .demuc1 p, .demuc2 p, .demuc3 p, .demuc4 p, .demuc5 p {
+            color: aliceblue;
+            margin-left: 15px;
+        }
+        #wrapper-link {
+            margin-top: 15px;
+            background-color: #6495ed;
+            width: 270px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+        }
+        #wrapper-link p {
+            color: aliceblue;
+            margin-left: 15px;
+        }
+        #lienket li {
+            margin-left: -20px;
+            margin-bottom: 10px;
+        }
+        #lienket li a {
+            text-decoration: none;/*loại bỏ gạch chân mặc định của liên kết*/
+        } 
+        #footer {
+            margin-top: 10px;
+            background-color:darkgray;
+            width: 1000px;
+            height: 60px; 
+            display: flex;/*cho thành ngang*/
+            flex-direction: column;/*xong lại cho thành dọc*/
+            align-items: center;/*căn giữa*/
+        }   
+        #footer p {
+            margin: 0;/*loại bỏ khoảng cách*/
+        }
+        .p1 {
+            padding-top: 10px;/*cho p đầu tiên các thẻ div cha 10px*/
+        }
+    </style>
+</head>
+<body>
+    <div id="frame">
+        <div id="header">
+            <div id="name">
+                <h1>TRƯỜNG ĐẠI HỌC SƯ PHẠM KỸ THUẬT HƯNG YÊN</h1>
+                <h2>KHOA CÔNG NGHỆ THÔNG TIN</h2>
+            </div>
+            <div id="menu">
+                <ul>
+                    <li><a href="">Trang chủ</a></li>
+                    <li><a href="">Giới thiệu</a></li>
+                    <li><a href="">Bộ môn - Trung tâm</a></li>
+                    <li><a href="">Đào tạo</a></li>
+                    <li><a href="">Nghiên cứu khoa học</a></li>
+                    <li><a href="">Tin tức</a></li>
+                    <li><a href="">Sự kiện</a></li>
+                    <li><a href="">Thông báo</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="content">
+            <div id="sideshow">
+                <img src="283.jpg" alt="Ảnh lỗi" id="anhsideshow">
+            </div>
+            <div id="content-left">
+                <div id="news">
+                    <div id="tintucsukien">
+                        <p><b>Tin tức & Sự kiện</b></p>                        
+                    </div>
+                    <div id="dongkechinh1"></div>
+                    <div id="tintucsukien-left">
+                        <img src="50-loi-chuc-sinh-nhat-hay-doc-dao-y-nghia-cho-moi-doi-tuong-202204271608128355.jpg" alt="Ảnh lỗi" id="anhsinhnhat">
+                        <p id="thongtintochucsinhnhat"><b>Khoa Công nghệ Thông tin tổ chức sinh nhật cho các thầy cô trong tháng 2</b></p>
+                        <p id="thongtinngaysinhnhat">Hôm nay ngày 20/02/2020, khoa Công nghệ Thông tin tổ chức sinh nhật cho các thầy cô trong tháng 2: thầy Phạm Minh Chuẩn(20/02) và thầy Chu Bá Thành(22/02).</p>                   
+                    </div>
+                    <div id="tintucsukien-right">
+                        <img src="115.jpg" alt="Ảnh lỗi" id="anhlebaove">
+                        <p id="thongtinlebaove"><b>Lễ bảo vệ Luận văn Thạc sĩ chuyên ngành Công nghệ Thông tin khóa 7</b></p>
+                        <div class="dongkephu"></div>
+                        <img src="115.jpg" alt="Ảnh lỗi" id="anhtruongDHSPKTHY">
+                        <p id="thongtintruongDHSPKTHY"><b>Trường ĐH SPKT Hưng Yên vinh dự trong top 30 trường Đại học Việt Nam có công bố quốc tế nhiều nhất.</b></p>
+                        <div class="dongkephu"></div>
+                        <img src="115.jpg" alt="Ảnh lỗi" id="anhviettel">
+                        <p id="thongtinviettel"><b>Tổng công ty viễn thông Viettel về thăm và làm việc tại Khoa Công nghệ thông tin</b></p>                       
+                        <div class="dongkephu"></div>
+                        <img src="115.jpg" alt="Ảnh lỗi" id="anhcongbo02dean">
+                        <p id="thongtincongbo02dean"><b>Khoa Công nghệ Thông tin công bố 02 đề án mở ngành đào tạo trình độ Đại học</b></p>
+                        <div class="dongkephu"></div>
+                        <p id="xemthem"><b>Xem thêm</b></p>
+                    </div>
+                </div>
+                <div id="activites">
+                    <div id="hoithisinhvien">
+                        <p><b>Hội thi sinh viên</b></p>                        
+                    </div>
+                    <div id="dongkechinh2"></div>
+                    <div id="hoithisinhvien-left">
+                        <p id="vuicungit"><b>VUI CÙNG IT</b></p>
+                        <img src="115.jpg" alt="Ảnh lỗi" id="anhvuicungit">
+                        <p id="vannghe-thethao"><b>VĂN NGHỆ - THỂ THAO</b></p>
+                        <img src="115.jpg" alt="Ảnh lỗi" id="anhvannghe-thethao">
+                    </div>
+                    <div id="hoithisinhvien-right">
+                        <p id="olympictinhoc"><b>OLYMPIC TIN HỌC</b></p>
+                        <img src="115.jpg" alt="Ảnh lỗi" id="anholympictinhoc">
+                        <p id="nghiencuukhoahoc"><b>NGHIÊN CỨU KHOA HỌC</b></p>
+                        <img src="115.jpg" alt="Ảnh lỗi" id="anhnghiencuukhoahoc">
+                    </div>
+                </div>
+            </div>
+            <div id="content-right">
+                <div id="announces">
+                    <div id="wrapper-thongbao">
+                        <p><b>Thông báo</b></p>
+                    </div>                  
+                    <ul id="thongbao">
+                        <li>Quyết định công nhận tốt nghiệp ĐHLT (từ CĐN)</li>
+                        <li>Quyết định phân chuyên ngành ĐHCQ khóa 2019-2023 (K17)</li>
+                        <li>Quyết định sinh viên bảo lưu kết quả học tập TK14.3 Nguyễn Minh Quang</li>
+                        <li>Quyết định công nhận tốt nghiệp ĐHCQ học kỳ bổ sung 2019</li>
+                        <li>Quyết định công nhận tốt nghiệp ĐHLT (từ CĐ) học kỳ bổ sung 2019</li>
+                        <li>Quyết định sinh viên bảo lưu kết quả học tập TK16.8 Nguyễn Hữu Bắc</li>
+                        <li>Quyết định chuyển ngành từ CNTT -> KT ô tô lớp 101184 Nguyễn Sỹ Hiếu</li>
+                    </ul>
+                    <div class="demuc1"><p><b>Học viên cao học</b></p></div>
+                    <div class="demuc2"><p><b>Sinh viên</b></p></div>
+                    <div class="demuc3"><p><b>Văn bản</b></p></div>
+                    <div class="demuc4"><p><b>Hỏi đáp</b></p></div>
+                    <div class="demuc5"><p><b>Liên hệ</b></p></div>
+                </div>
+                <div id="links">
+                    <div id="wrapper-link">
+                        <p><b>Liên kết</b></p>
+                    </div> 
+                    <ul id="lienket">
+                        <li><a href="">Bộ môn Công nghệ phần mềm</a></li>
+                        <li><a href="">Bộ môn Mạng máy tính & Truyền thông</a></li>
+                        <li><a href="">Bộ môn Kỹ thuật máy tính</a></li>
+                        <li><a href="">Trung tâm Hưng Yên Apteach</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div style="width: 100%; clear: both;"></div>
+        </div>
+        <div id="footer">
+            <p class="p1">Bản quyền thuộc về Khoa CNTT</p>
+            <p class="p2">Trường Đại học Sư Phạm Kỹ Thuật Hưng Yên</p>
+        </div>
+    </div>
+</body>
+</html>

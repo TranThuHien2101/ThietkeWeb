@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #frame {
+            width: 960px;
+            /* border: 1px solid black; */
+        }
+        #content {
+            float: left;
+        }
+        #news {
+            width: 350px;
+            float: left;
+        }
+        #anhmicrosoft {
+            float: left;
+            width: 170px;
+            height: 200px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+        .list-p {
+            display: flex;
+            flex-direction: column;
+        }
+        .p1 {
+            /* float: left; */
+            width: 160px;
+            margin-top: 0%;
+            color: blue;
+            margin: 0;
+            }
+        .p2 {
+            /* float: left; */
+            width: 160px;
+            color: gray;
+            margin: 0;
+        }
+        .list-tieude {
+            clear: both;
+        }
+        .list-tieude li a {
+            color: blue;
+        }
+        #relate {
+            width: 330px;
+            height: 300px;
+            margin-top: 10px;
+            float: left;
+            background-color: darkgray;
+            margin-right: 10px;
+        }
+        #relate p {
+            margin-top: 0px;
+        }
+        #right {
+            width: 260px;
+            height: 600px;
+            float: left; 
+            background-color: darkgray;
+            margin-top: 10px;
+        }
+        #right p {
+            margin-top: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div id="frame">
+        <div id="content">
+            <div id="news">
+                <img src="Microsoft.jpg" alt="Ảnh lỗi" id="anhmicrosoft">
+                <div class="list-p">
+                    <p class="p1"><b>Microsoft công bố Window 8 Release Preview</b></p>
+                    <p class="p2">Ngày:01/06/2012 07:42 AM</p>                    
+                </div>
+                <div id="thongtin-microsoft">
+                    <p>Rạng sáng nay (1/6) theo giờ Việt Nam, Microsoft đã chính thức 
+                        công bố phiên bản Windows 8 Release Preview với nhiều tính năng và ứng dụng 
+                        mới được thêm vào. Với phiên bản này, Microsoft đem đến giao diện người 
+                        dùng mới, thuận lợi để thao tác với màn hình cảm ứng cũng như làm việc 
+                        với chuột và bàn phím theo các truyền thống.
+                    </p>
+                </div>
+                <ul class="list-tieude">
+                    <li><a href="">Tiêu đề tin liên quan 1</a></li>
+                    <li><a href="">Tiêu đề tin liên quan 2</a></li>
+                    <li><a href="">Tiêu đề tin liên quan 3</a></li>
+                    <li><a href="">Tiêu đề tin liên quan 4</a></li>
+                    <li><a href="">Tiêu đề tin liên quan 5</a></li>
+                </ul>
+            </div>
+            <div id="relate">
+                <p>TOP 10 NEWS</p>
+            </div>
+        </div>
+        <div id="right">
+            <p>MENU RIHT</p>            
+        </div>
+    </div>
+</body>
+</html>
